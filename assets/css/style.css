@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 375px) {
+    /* Nomes */
+
+    body {
+        font-size: 2rem;
+        font-family: Arial, sans-serif;
+        margin: 1rem;
+    }
+    
+    .nomes-sorteador {
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+    }
+    
+    .nomes__texto {
+        display: block;
+        margin-bottom: .2rem;
+    }
+    
+    .nomes__input,
+    .nomes__btn {
+        display: inline-block;
+    }
+    
+    .nomes__input {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .nomes__input::placeholder {
+        color: black
+    }
+    
+    .nomes__btn {
+        background-color: lime;
+        border: none;
+        border-radius: 5px;
+        width: 30%;
+        padding: .7rem 0;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    /* Nomes Sorteados */
+
+    .nomes__lista {
+        list-style: none;
+    }
+    
+    .nomes__lista--none {
+        display: none;
+    }
+
+    .lista__div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .lista__linha {
+        font-size: 1.5rem;
+        padding: 1rem 0
+    }
+
+    .lista__linha:last-child {
+        padding-bottom: 0;
+    }
+    
+    .lista__btn{
+        background-color: transparent;
+        font-size: 1.5rem;
+        border: none;
+    }
+
+    /* Botão para o Sorteio */
+
+    .sortear {
+        margin: 1rem 1.5rem;
+        width: 86.5%;
+        padding: 1rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: lime;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    .sortear--none {
+        display: none;
+    }
+    
+    /* Time A e B */
+
+    .times {
+        display: none;
+    }
+
+    .time {
+        padding: 1rem 0;
+    }
+
+    .time__titulo {
+        text-align: center;
+    }
+
+    .time__lista {
+        list-style: none;
+    }
+
+    .time__linha {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .time__nome {
+        font-size: 1.5rem;
+        padding: 1rem 0
+    }
+
+    .time__nome:last-child {
+        padding-bottom: 0;
+    }
+
+    .time__retirar{
+        background-color: transparent;
+        font-size: 1.5rem;
+        border: none;
+    }
+}
