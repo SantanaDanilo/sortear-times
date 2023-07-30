@@ -23,7 +23,12 @@ enviar.addEventListener('click', () => {
     listaArr.push(linhaLi.innerText)
 
     nome.value = ""
+
+    linhaBtn.addEventListener('click', () => {
+        if(listaArr.includes(linhaLi.innerText)) {
+            listaArr.splice(listaArr.indexOf(linhaLi.innerText), 1)
+        }
+
+        linha.style.display = 'none'
+    })
 })
-
-
-
