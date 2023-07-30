@@ -110,11 +110,14 @@
         padding: 1rem 0;
     }
 
-    .time__titulo {
+    .time__titulo,
+    .time__titulo--banco {
         text-align: center;
     }
 
-    .time__lista {
+    .time__lista-a,
+    .time__lista-b,
+    .banco__lista {
         list-style: none;
     }
 
@@ -124,9 +127,11 @@
         align-items: center;
     }
 
-    .time__nome {
+    .time__nome,
+    .banco__linha {
         font-size: 1.5rem;
-        padding: 1rem 0
+        padding: 1rem 0;
+        text-align: center;
     }
 
     .time__nome:last-child {
